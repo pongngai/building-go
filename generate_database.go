@@ -5,6 +5,7 @@
 package main
 
 import (
+	"fmt"
 	_const "github.com/pongngai/building-go/const"
 	"log"
 	"os"
@@ -13,7 +14,8 @@ import (
 )
 
 func main() {
-
+	fmt.Println("Generating database configuration")
+	defer fmt.Println("Done...")
 	templateStr := _const.Header + _const.DatabaseTemplate
 
 	// Create a new template and parse the template string
